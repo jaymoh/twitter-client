@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import sys
 
 from functions import create_client, post_tweet, prepare_tweet_open_ai
