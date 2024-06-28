@@ -93,10 +93,10 @@ def prepare_tweet_open_ai(hashtag="#RutoMustGo", prompt=None):
 
     # Generate a random tweet from unpopular dictators in history
     prompts = [
-        "Give me a quote from an unpopular dictator in history.",
-        "Provide a historical quote from a notorious dictator.",
-        "What's a quote from a dictator that's not well-known?",
-        "Tell me a quote from a dictator that's not widely recognized.",
+        "Give me a quote from an unpopular politician in history.",
+        "Provide a historical quote from a notorious politicians.",
+        "What's a quote from a leader that's not well-known?",
+        "Tell me a quote from a fictional movie character who was a dictator. Without explaining about the movie.",
         "Provide a historical quote from a well-known political figure who was controversial.",
         "Give me a quote from a historical figure known for their controversial leadership.",
         "Share a quote from a historical leader who was widely criticized."
@@ -116,8 +116,8 @@ def prepare_tweet_open_ai(hashtag="#RutoMustGo", prompt=None):
                                                   ])
         quote = response.choices[0].message.content.strip()
         print(quote)  # Uncomment to see the generated quote
-        if len(quote) > 225:
-            quote = quote[:222] + "..."
+        if len(quote) > 265:
+            quote = quote[:262] + "..."
         return quote + " " + hashtag
     except Exception as e:
         print("Error while fetching quote:", e)
