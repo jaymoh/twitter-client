@@ -10,5 +10,5 @@ if __name__ == "__main__":
     else:
         tweet_message = prepare_tweet_open_ai()
 
-    #if tweet_message:
-        #post_tweet(twitter_client, tweet_message)
+    if tweet_message:
+        post_tweet(twitter_client, tweet_message)
