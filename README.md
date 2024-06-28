@@ -20,6 +20,6 @@ It can also use OpenAI's GPT-3 to get random quotes and tweet them.
     OPENAI_API_KEY=<your openai api key>
     ``
 7. To post a tweet from the terminal, run `tweet.py` with your tweet as the argument. <br/> For example: `python tweet.py "What a terrible regim!"` will post a tweet with the text "What a terrible regim!".
-8. To get a random quote from OpenAI's GPT-3, run `random_quote_tweet.py` with your query as the argument. <br/> For example: `python random_quote_tweet.py "What is the meaning of life?"` will give you some answer based on the GPT-3 model.
-9. If you don't want to provide a query, you can run `random_quote_tweet.py` without any arguments. <br/> For example: `python random_quote_tweet.py` will give you a random quote from an unpopular dictator in history using the GPT-3 model.
+8. To get a random quote from OpenAI's GPT-3, run `random_quote_tweet.py` with your query as the argument. <br/> For example: `python random_quote_tweet.py "What is the meaning of life?"` will give you some answer based on the GPT-3.5-turbo-0125.
+9. If you don't want to provide a query, you can run `random_quote_tweet.py` without any arguments. <br/> For example: `python random_quote_tweet.py` will give you a random quote from an unpopular dictator in history using the GPT-3.5-turbo-0125 model
 10. The free tier of Twitter API allows you to make 50 requests per day. <br/> You can set up a cron job to run the script every 30 minutes to get the most out of the free tier. <br/> For example: `*/30 * * * * /usr/bin/python3 /path/to/random_quote_tweet.py` will run the script every 30 minutes.
