@@ -123,6 +123,9 @@ def prepare_tweet_open_ai(hashtag="#RutoMustGo", prompt=None):
         print("Error while fetching quote:", e)
         return None
 
+# todo: implement prepare_tweet_gemini_ai
+#def prepare_tweet_gemini_ai(hashtag="#RutoMustGo", prompt=None):
+
 
 """
 This function gets the trending topics for a specific location using the Tweepy library. (Standard V1.1 API)
